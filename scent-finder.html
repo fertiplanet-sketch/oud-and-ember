@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scent Finder | Oud &amp; Ember</title>
+  <meta name="description" content="Answer three quick questions to find your Oud & Ember perfume.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="48" height="48">Oud &amp; Ember</a>
+    <form class="search" role="search">
+      <label class="sr" for="q">Search the site</label>
+      <input id="q" type="search" placeholder="Search perfumes, notes, pages…" autocomplete="off">
+      <ul id="results" class="results" aria-live="polite" hidden></ul>
+    </form>
+  </div>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="scent-finder.html" aria-current="page">Scent Finder</a></li>
+      <li><a href="ingredients.html">Ingredients</a></li>
+      <li><a href="gift-builder.html">Gift Builder</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="wrap page-head split">
+  <div>
+    <h1>Scent Finder</h1>
+    <p>Not sure where to start? Answer three quick questions and we will match you with one of our six perfumes.</p>
+  </div>
+  <img src="images/finder-hero.jpg" alt="Six perfume bottles arranged in a semicircle on a stone table" width="1600" height="900" loading="lazy">
+</section>
+
+<section class="wrap split">
+  <form id="quiz" class="panel">
+    <fieldset><legend>1. How do you want to feel?</legend><div class="options"><label><input type="radio" name="q1" value="amber-tide" required>Calm</label><label><input type="radio" name="q1" value="midnight-oud" required>Confident</label><label><input type="radio" name="q1" value="desert-rose" required>Romantic</label><label><input type="radio" name="q1" value="jasmine-majlis" required>Uplifted</label></div></fieldset>
+    <fieldset><legend>2. Pick a moment</legend><div class="options"><label><input type="radio" name="q2" value="saffron-ember" required>Desert sunset</label><label><input type="radio" name="q2" value="amber-tide" required>Beach morning</label><label><input type="radio" name="q2" value="jasmine-majlis" required>Evening majlis</label><label><input type="radio" name="q2" value="cedar-dune" required>Mountain walk</label></div></fieldset>
+    <fieldset><legend>3. Which note draws you in?</legend><div class="options"><label><input type="radio" name="q3" value="desert-rose" required>Rose</label><label><input type="radio" name="q3" value="midnight-oud" required>Oud</label><label><input type="radio" name="q3" value="saffron-ember" required>Spice</label><label><input type="radio" name="q3" value="cedar-dune" required>Incense</label></div></fieldset>
+    <button class="btn" type="submit">Show my match</button>
+  </form>
+  <div>
+    <article id="match" class="card" tabindex="-1" aria-live="polite" hidden></article>
+    <article class="card" id="bestseller">
+      <img src="images/p-desert-rose.jpg" alt="Desert Rose perfume bottle" width="800" height="800" loading="lazy">
+      <div><p class="type">Our bestseller</p><h3>Desert Rose</h3><p>Still deciding? Most first-time customers start here.</p></div>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="images/logo.png" alt="Oud &amp; Ember logo" width="64" height="64">
+        <p>Perfume, slow-crafted in the Emirates.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>Oud &amp; Ember Atelier<br>Warehouse 12, Al Quoz Creative District<br>Dubai, UAE</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+97140000000">+971 4 000 0000</a><br>
+        <a href="mailto:hello@oudandember.example">hello@oudandember.example</a><br>Sat–Thu, 10am–9pm</p>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.tiktok.com/">TikTok</a><br>
+        <a href="https://www.youtube.com/">YouTube</a></p>
+      </div>
+    </div>
+    <p class="small">© 2026 Oud &amp; Ember. All rights reserved. Oud &amp; Ember is a fictional brand created for a
+    student project; all text, images and video on this site are AI-generated.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

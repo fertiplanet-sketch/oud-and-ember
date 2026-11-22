@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Oud &amp; Ember</title>
+  <meta name="description" content="Visit, call, email or message Oud & Ember.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="48" height="48">Oud &amp; Ember</a>
+    <form class="search" role="search">
+      <label class="sr" for="q">Search the site</label>
+      <input id="q" type="search" placeholder="Search perfumes, notes, pages…" autocomplete="off">
+      <ul id="results" class="results" aria-live="polite" hidden></ul>
+    </form>
+  </div>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="scent-finder.html">Scent Finder</a></li>
+      <li><a href="ingredients.html">Ingredients</a></li>
+      <li><a href="gift-builder.html">Gift Builder</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="wrap page-head split">
+  <div>
+    <h1>Contact Us</h1>
+    <p>Questions about a perfume, a gift or a visit to the atelier? We usually reply within one working day.</p>
+    <p><strong>Atelier:</strong> Warehouse 12, Al Quoz Creative District, Dubai, UAE<br>
+    <strong>Phone:</strong> <a href="tel:+97140000000">+971 4 000 0000</a><br>
+    <strong>Email:</strong> <a href="mailto:hello@oudandember.example">hello@oudandember.example</a><br>
+    <strong>Hours:</strong> Saturday–Thursday, 10am–9pm</p>
+    <p><strong>Social:</strong> <a href="https://www.instagram.com/">Instagram</a> · <a href="https://www.tiktok.com/">TikTok</a> · <a href="https://www.youtube.com/">YouTube</a></p>
+  </div>
+  <img src="images/contact-boutique.jpg" alt="The front of the Oud & Ember atelier with a wooden door and brass sign at dusk" width="1600" height="900" loading="lazy">
+</section>
+
+<section class="wrap split">
+  <div class="panel">
+    <form id="contact-form" novalidate>
+      <div class="field"><label for="name">Your name</label><input required minlength="2" autocomplete="name" id="name" name="name" aria-describedby="name-err" data-error="Please enter your name."><span class="err" id="name-err"></span></div>
+      <div class="field"><label for="email">Email address</label><input type="email" required autocomplete="email" id="email" name="email" aria-describedby="email-err" data-error="Please enter a valid email, like name@example.com."><span class="err" id="email-err"></span></div>
+      <div class="field"><label for="topic">Topic</label>
+        <select id="topic" name="topic"><option>Perfume advice</option><option>Gift enquiry</option><option>Atelier visit</option><option>Other</option></select></div>
+      <div class="field"><label for="message">Message</label><textarea rows="5" required minlength="10" id="message" name="message" aria-describedby="message-err" data-error="Please write a message of at least 10 characters."></textarea><span class="err" id="message-err"></span></div>
+      <p class="type">We only use your details to reply to you. This demo site does not send or store anything.</p>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+    <div id="thanks" tabindex="-1" hidden><h2>Thank you!</h2><p>Your message is ready. On a live site our team would reply within one working day.</p></div>
+  </div>
+  <img src="images/contact-desk.jpg" alt="A tidy reception desk with a guest book, perfume testers and a vase of roses" width="1600" height="900" loading="lazy">
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="images/logo.png" alt="Oud &amp; Ember logo" width="64" height="64">
+        <p>Perfume, slow-crafted in the Emirates.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>Oud &amp; Ember Atelier<br>Warehouse 12, Al Quoz Creative District<br>Dubai, UAE</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+97140000000">+971 4 000 0000</a><br>
+        <a href="mailto:hello@oudandember.example">hello@oudandember.example</a><br>Sat–Thu, 10am–9pm</p>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.tiktok.com/">TikTok</a><br>
+        <a href="https://www.youtube.com/">YouTube</a></p>
+      </div>
+    </div>
+    <p class="small">© 2026 Oud &amp; Ember. All rights reserved. Oud &amp; Ember is a fictional brand created for a
+    student project; all text, images and video on this site are AI-generated.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

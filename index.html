@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Oud &amp; Ember</title>
+  <meta name="description" content="Oud & Ember: small-batch perfumes inspired by the Emirates.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="48" height="48">Oud &amp; Ember</a>
+    <form class="search" role="search">
+      <label class="sr" for="q">Search the site</label>
+      <input id="q" type="search" placeholder="Search perfumes, notes, pages…" autocomplete="off">
+      <ul id="results" class="results" aria-live="polite" hidden></ul>
+    </form>
+  </div>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="scent-finder.html">Scent Finder</a></li>
+      <li><a href="ingredients.html">Ingredients</a></li>
+      <li><a href="gift-builder.html">Gift Builder</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero">
+  <img src="images/hero.jpg" alt="A glass perfume bottle on rippled desert sand at sunrise" width="1600" height="900" loading="eager">
+  <div class="wrap">
+    <h1>Perfume, slow-crafted in the Emirates.</h1>
+    <p>Six small-batch fragrances built from oud, rose, saffron and frankincense — blended by hand and rested for weeks before bottling.</p>
+    <a class="btn" href="scent-finder.html">Find your scent</a>
+    <a class="btn ghost" href="ingredients.html">Explore ingredients</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>How do you want to feel?</h2>
+  <ul class="chips">
+    <li><a href="scent-finder.html">Calm</a></li><li><a href="scent-finder.html">Confident</a></li>
+    <li><a href="scent-finder.html">Romantic</a></li><li><a href="scent-finder.html">Uplifted</a></li>
+    <li><a href="scent-finder.html">Grounded</a></li><li><a href="scent-finder.html">Warm</a></li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2>The Collection</h2>
+  <div class="grid">
+      <article class="card" id="desert-rose">
+        <img src="images/p-desert-rose.jpg" alt="Desert Rose perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Floral · Eau de parfum</p><h3>Desert Rose</h3><p>Taif rose, pink pepper and soft musk. Romantic and glowing.</p><p class="price">AED 320 · 50 ml</p></div>
+      </article><article class="card" id="midnight-oud">
+        <img src="images/p-midnight-oud.jpg" alt="Midnight Oud perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Woody · Eau de parfum</p><h3>Midnight Oud</h3><p>Aged oud, leather and dark vanilla. Bold and unforgettable.</p><p class="price">AED 480 · 50 ml</p></div>
+      </article><article class="card" id="saffron-ember">
+        <img src="images/p-saffron-ember.jpg" alt="Saffron Ember perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Spicy · Eau de parfum</p><h3>Saffron Ember</h3><p>Saffron, cardamom and warm amber. Like a desert sunset.</p><p class="price">AED 395 · 50 ml</p></div>
+      </article><article class="card" id="amber-tide">
+        <img src="images/p-amber-tide.jpg" alt="Amber Tide perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Fresh · Eau de parfum</p><h3>Amber Tide</h3><p>Sea salt, bergamot and amber. Calm, fresh and easy.</p><p class="price">AED 290 · 50 ml</p></div>
+      </article><article class="card" id="jasmine-majlis">
+        <img src="images/p-jasmine-majlis.jpg" alt="Jasmine Majlis perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Floral · Eau de parfum</p><h3>Jasmine Majlis</h3><p>Jasmine sambac, orange blossom and sandalwood. Bright and uplifting.</p><p class="price">AED 340 · 50 ml</p></div>
+      </article><article class="card" id="cedar-dune">
+        <img src="images/p-cedar-dune.jpg" alt="Cedar Dune perfume bottle" width="800" height="800" loading="lazy">
+        <div><p class="type">Woody · Eau de parfum</p><h3>Cedar Dune</h3><p>Cedar, frankincense and vetiver. Quiet and grounding.</p><p class="price">AED 360 · 50 ml</p></div>
+      </article>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <video controls preload="none" poster="images/film-poster.jpg" width="1280" height="720">
+      <source src="video/film.mp4" type="video/mp4">
+      <track kind="captions" src="video/film.vtt" srclang="en" label="English" default>
+      Your browser cannot play this video. <a href="video/film.mp4">Download the film</a>.
+    </video>
+    <div>
+      <h2>From first light to final bottle</h2>
+      <p>Our 30-second film follows a single perfume from the desert at dawn to the moment it is sealed. Captions are included.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap split">
+  <img src="images/home-craft.jpg" alt="A perfumer’s hands pouring amber oil from a glass beaker" width="1600" height="900" loading="lazy">
+  <div>
+    <h2>Made slowly, on purpose</h2>
+    <p>Every batch is blended in our Dubai atelier in runs of 200 bottles or fewer. We rest each blend for six weeks so the notes can settle — the same patience our grandparents gave to oud.</p>
+    <a class="btn" href="about.html">Our story</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="images/logo.png" alt="Oud &amp; Ember logo" width="64" height="64">
+        <p>Perfume, slow-crafted in the Emirates.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>Oud &amp; Ember Atelier<br>Warehouse 12, Al Quoz Creative District<br>Dubai, UAE</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+97140000000">+971 4 000 0000</a><br>
+        <a href="mailto:hello@oudandember.example">hello@oudandember.example</a><br>Sat–Thu, 10am–9pm</p>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.tiktok.com/">TikTok</a><br>
+        <a href="https://www.youtube.com/">YouTube</a></p>
+      </div>
+    </div>
+    <p class="small">© 2026 Oud &amp; Ember. All rights reserved. Oud &amp; Ember is a fictional brand created for a
+    student project; all text, images and video on this site are AI-generated.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

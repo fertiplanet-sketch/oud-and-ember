@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gift Builder | Oud &amp; Ember</title>
+  <meta name="description" content="Build a personalised Oud & Ember gift and see the price instantly.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="48" height="48">Oud &amp; Ember</a>
+    <form class="search" role="search">
+      <label class="sr" for="q">Search the site</label>
+      <input id="q" type="search" placeholder="Search perfumes, notes, pages…" autocomplete="off">
+      <ul id="results" class="results" aria-live="polite" hidden></ul>
+    </form>
+  </div>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="scent-finder.html">Scent Finder</a></li>
+      <li><a href="ingredients.html">Ingredients</a></li>
+      <li><a href="gift-builder.html" aria-current="page">Gift Builder</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="wrap page-head split">
+  <div>
+    <h1>Gift Builder</h1>
+    <p>Choose a perfume, a size and a wrap. Add a name if you like — the price updates as you go.</p>
+  </div>
+  <img src="images/gift-hero.jpg" alt="A wrapped perfume gift box with a brass tag on a dark wooden table" width="1600" height="900" loading="lazy">
+</section>
+
+<section class="wrap split">
+  <form id="gift" class="panel">
+    <div class="field"><label for="perfume">Perfume</label><select id="perfume" name="perfume"><option value="desert-rose">Desert Rose — AED 320</option><option value="midnight-oud">Midnight Oud — AED 480</option><option value="saffron-ember">Saffron Ember — AED 395</option><option value="amber-tide">Amber Tide — AED 290</option><option value="jasmine-majlis">Jasmine Majlis — AED 340</option><option value="cedar-dune">Cedar Dune — AED 360</option></select></div>
+    <fieldset><legend>Size</legend><div class="options"><label><input type="radio" name="size" value="1" data-label="50 ml" checked>50 ml</label><label><input type="radio" name="size" value="0.6" data-label="30 ml">30 ml</label><label><input type="radio" name="size" value="1.6" data-label="100 ml">100 ml</label></div></fieldset>
+    <fieldset><legend>Wrapping</legend><div class="options"><label><input type="radio" name="wrap" value="0" data-label="card box" checked>Simple card box</label><label><input type="radio" name="wrap" value="25" data-label="Sadu wrap">Sadu fabric wrap +AED 25</label><label><input type="radio" name="wrap" value="60" data-label="wooden box">Carved wooden box +AED 60</label></div></fieldset>
+    <div class="field"><label for="engrave">Engraving on the bottle (optional, +AED 40)</label>
+      <input id="engrave" name="engrave" maxlength="20" placeholder="Up to 20 characters"></div>
+    <p class="panel" aria-live="polite"><strong>Your gift:</strong> <span id="summary"></span></p>
+    <a class="btn" href="contact.html">Send a gift enquiry</a>
+  </form>
+  <img src="images/gift-wrap.jpg" alt="Three gift wrapping options side by side: card box, Sadu fabric wrap and carved wooden box" width="1600" height="900" loading="lazy">
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="images/logo.png" alt="Oud &amp; Ember logo" width="64" height="64">
+        <p>Perfume, slow-crafted in the Emirates.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>Oud &amp; Ember Atelier<br>Warehouse 12, Al Quoz Creative District<br>Dubai, UAE</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+97140000000">+971 4 000 0000</a><br>
+        <a href="mailto:hello@oudandember.example">hello@oudandember.example</a><br>Sat–Thu, 10am–9pm</p>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.tiktok.com/">TikTok</a><br>
+        <a href="https://www.youtube.com/">YouTube</a></p>
+      </div>
+    </div>
+    <p class="small">© 2026 Oud &amp; Ember. All rights reserved. Oud &amp; Ember is a fictional brand created for a
+    student project; all text, images and video on this site are AI-generated.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
