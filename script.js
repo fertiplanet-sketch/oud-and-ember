@@ -42,6 +42,15 @@ if (q) {
   document.addEventListener('click', e => { if (!q.form.contains(e.target)) results.hidden = true; });
 }
 
+// Hero background video: pause/play button (moving content must be stoppable)
+const heroVideo = document.querySelector('.hero-video');
+const pauseBtn = document.querySelector('.pause');
+if (heroVideo && pauseBtn) pauseBtn.addEventListener('click', () => {
+  const paused = heroVideo.paused ? (heroVideo.play(), false) : (heroVideo.pause(), true);
+  pauseBtn.setAttribute('aria-pressed', paused);
+  pauseBtn.textContent = paused ? 'Play background video' : 'Pause background video';
+});
+
 // Shared card markup for a recommended perfume
 const card = key => {
   const [name, price, desc] = PERFUMES[key];
