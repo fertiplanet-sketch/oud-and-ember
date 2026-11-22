@@ -1,4 +1,4 @@
-# Oud & Ember — model website (DMD 1203 AI in Digital Media)
+# Oud & Ember — model website
 
 A 7-page static website for a fictional Emirati perfume house. Plain HTML, one CSS file and one JS file. No frameworks and no build step.
 
@@ -10,16 +10,15 @@ A 7-page static website for a fictional Emirati perfume house. Plain HTML, one C
 | `scent-finder.html` | Feature 1: three-question perfume quiz |
 | `ingredients.html` | Feature 2: signature ingredients and note families |
 | `gift-builder.html` | Feature 3: gift options with live price |
-| `journal.html` | Feature 4: articles, including AI disclosure |
+| `journal.html` | Feature 4: articles (how a perfume is made, oud, layering) |
 | `contact.html` | Contact Us: details, social links, validated form |
 | `style.css` | All styling (colours and fonts at the top) |
 | `script.js` | Search, quiz, gift builder and form checks |
-| `images/` | Logo and AI images (same file names = no code changes) |
-| `video/film.mp4`, `video/film.vtt` | 30-second AI film and its captions |
+| `images/` | Logo, images and video posters (same file names = no code changes) |
+| `video/` | 30-second film with captions, plus short silent loops for the hero, Journal and Gift Builder |
 
-## Replacing the placeholders
-Save each Google Flow image under the **same file name** in `images/` (JPG; PNG for `logo.png`).
-Join the two 15-second clips into `video/film.mp4`. If the narration changes, edit `video/film.vtt` to match.
+## Replacing images or video
+Save a new file under the **same file name** in `images/` or `video/` and the pages pick it up. If the film's narration changes, edit `video/film.vtt` to match.
 
 ## Publishing on GitHub Pages
 1. Upload everything in this folder to the root of a public repository.
