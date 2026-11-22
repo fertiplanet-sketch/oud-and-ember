@@ -17,9 +17,9 @@ const INDEX = [
   ['Scent Finder quiz', 'scent-finder.html', 'quiz recommend match mood feel'],
   ['Ingredients', 'ingredients.html', 'oud rose saffron frankincense notes families woody floral spicy fresh'],
   ['Gift Builder', 'gift-builder.html', 'gift wrap box engraving present price'],
-  ['Journal', 'journal.html', 'blog articles ai layering history oud'],
+  ['Journal', 'journal.html', 'blog articles operations making layering history oud'],
   ['Contact Us', 'contact.html', 'email phone address form visit hours social'],
-  ['Journal: How we use AI', 'journal.html#ai', 'ai artificial intelligence disclosure ethics'],
+  ['Journal: Smart operations', 'journal.html#operations', 'operations making how perfume is made batch sourcing bottling planning'],
   ['Journal: Layering perfume', 'journal.html#layering', 'layering guide combine'],
   ...Object.entries(PERFUMES).map(([key, [name, , desc]]) => [name + ' (perfume)', 'index.html#' + key, desc])
 ];
@@ -42,13 +42,17 @@ if (q) {
   document.addEventListener('click', e => { if (!q.form.contains(e.target)) results.hidden = true; });
 }
 
-// Hero background video: pause/play button (moving content must be stoppable)
-const heroVideo = document.querySelector('.hero-video');
-const pauseBtn = document.querySelector('.pause');
-if (heroVideo && pauseBtn) pauseBtn.addEventListener('click', () => {
-  const paused = heroVideo.paused ? (heroVideo.play(), false) : (heroVideo.pause(), true);
-  pauseBtn.setAttribute('aria-pressed', paused);
-  pauseBtn.textContent = paused ? 'Play background video' : 'Pause background video';
+// Looping videos (hero, journal, gift): pause/play button; start paused if the user prefers reduced motion
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.pause').forEach(btn => {
+  const video = btn.parentElement.querySelector('video');
+  const setPaused = paused => {
+    paused ? video.pause() : video.play();
+    btn.setAttribute('aria-pressed', paused);
+    btn.textContent = paused ? 'Play video' : 'Pause video';
+  };
+  if (reduceMotion) setPaused(true);
+  btn.addEventListener('click', () => setPaused(!video.paused));
 });
 
 // Shared card markup for a recommended perfume
@@ -82,6 +86,9 @@ if (gift) {
     const size = gift.querySelector('[name=size]:checked');
     const wrap = gift.querySelector('[name=wrap]:checked');
     const engraving = f.get('engrave').trim();
+    const pic = document.getElementById('gift-img');      // preview follows the chosen perfume
+    pic.src = `images/p-${f.get('perfume')}.jpg`;
+    pic.alt = `${name} perfume bottle`;
     const total = Math.round(price * size.value) + Number(wrap.value) + (engraving ? 40 : 0);
     document.getElementById('summary').textContent =
       `${name} · ${size.dataset.label} · ${wrap.dataset.label}${engraving ? ` · engraved "${engraving}"` : ''} — AED ${total}`;

@@ -49,7 +49,10 @@ nav a:hover, nav a[aria-current] { border-color: var(--ember); }
 .hero .btn { margin: .3rem .3rem 0 0; }
 .pause { position: absolute; right: 1rem; bottom: 1rem; z-index: 2; padding: .4rem .8rem; border: 1px solid #fff8; border-radius: 99px;
   background: #0008; color: #fff; font: 600 .8rem var(--sans); cursor: pointer; }
-@media (prefers-reduced-motion: reduce) { .hero-video, .pause { display: none; } }
+.preview { display: flex; gap: 1rem; align-items: center; margin-bottom: 1.1rem; padding: 1rem; background: var(--sand); border-radius: var(--r); }
+.preview img { width: 96px; border-radius: 10px; }
+.media { position: relative; }
+.media video { width: 100%; border-radius: var(--r); }
 .page-head { padding: 3rem 0 1rem; }
 .page-head p, .lead { max-width: 62ch; color: var(--muted); font-size: 1.1rem; }
 

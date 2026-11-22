@@ -50,10 +50,16 @@
     <fieldset><legend>Wrapping</legend><div class="options"><label><input type="radio" name="wrap" value="0" data-label="card box" checked>Simple card box</label><label><input type="radio" name="wrap" value="25" data-label="Sadu wrap">Sadu fabric wrap +AED 25</label><label><input type="radio" name="wrap" value="60" data-label="wooden box">Carved wooden box +AED 60</label></div></fieldset>
     <div class="field"><label for="engrave">Engraving on the bottle (optional, +AED 40)</label>
       <input id="engrave" name="engrave" maxlength="20" placeholder="Up to 20 characters"></div>
-    <p class="panel" aria-live="polite"><strong>Your gift:</strong> <span id="summary"></span></p>
+    <div class="preview"><img id="gift-img" src="images/p-desert-rose.jpg" alt="Desert Rose perfume bottle" width="800" height="800">
+      <p aria-live="polite"><strong>Your gift:</strong> <span id="summary"></span></p></div>
     <a class="btn" href="contact.html">Send a gift enquiry</a>
   </form>
-  <img src="images/gift-wrap.jpg" alt="Three gift wrapping options side by side: card box, Sadu fabric wrap and carved wooden box" width="1600" height="900" loading="lazy">
+  <div class="media">
+    <video class="loop" autoplay muted loop playsinline poster="images/gift-wrap.jpg" aria-label="Hands wrapping a gift in Sadu fabric, then the three options side by side: card box, Sadu wrap and carved wooden box" width="640" height="360">
+      <source src="video/gift-wrap.mp4" type="video/mp4">
+    </video>
+    <button class="pause" type="button" aria-pressed="false">Pause video</button>
+  </div>
 </section>
 </main>
 
